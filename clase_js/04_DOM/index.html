@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="titulo" class="tituloCss">Esto es un título</h1>
+    <h2>Esto es un subTítulo</h2>
+
+    
+    <h1>Esto es otro título</h1>
+
+    <button onclick="setRojo();">Poner título en rojo</button>
+    <button onclick="changeColor()">alternar título</button>
+
+    <script>
+        // obtener un elemento
+        let op1 = document.getElementById("titulo");
+        let op2 = document.querySelector("h1");
+        let op3 = document.getElementsByTagName("h1");
+        let op4 = document.getElementsByClassName("tituloCss");
+
+        console.log(op1, op2, op3, op4);
+
+        const setRojo = ()=>{
+            op1.classList.add("tituloRojo");
+        }
+        const changeColor = ()=>{
+            op1.classList.toggle("tituloRojo");
+        }
+        // otros métodos:
+            // op1.classList.remove('MyClass');
+            // op1.classList.contains('MyClass'); 
+    </script>
+</body>
+</html>
