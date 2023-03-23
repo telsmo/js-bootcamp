@@ -1,5 +1,5 @@
 // let variableGlobal = "Soy una variable global";
-// const constante = 1;
+const constante = 1;
 
 // function myFunction(){
 
@@ -16,9 +16,9 @@
 //     console.log("3: ", variableLocal);
 // }
 
-// // console.log("4: ", variableLocal);
+// console.log("4: ", variableLocal);
 
-// // constante = 2;
+// constante = 2;
 
 // // console.log(constante);
 

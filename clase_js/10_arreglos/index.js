@@ -1,4 +1,3 @@
-
 const arreglo = [1,5,10,3,20,4];
 
 console.log(arreglo[0]);
@@ -14,7 +13,7 @@ arreglo.push(6);
 arreglo.unshift(8);
 
 // quita el último elemento
-arreglo.pop();
-
+let eliminado = arreglo.pop();
+console.log(`${eliminado} fue eliminado`);
 // quita el primer elemento
 arreglo.shift();

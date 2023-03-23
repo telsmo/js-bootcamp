@@ -4,8 +4,10 @@ const res = document.getElementById("respuesta");
 const consulta1 = ()=>{
     let val = num.value;
     if (val<5) {
-        res.innerText="El número es menor a 5";
+        res.innerText= "El número es menor a 5";
+        return;
     }
+    res.innerText="El número es mayor o igual a 5";
 };
 const consulta2 = ()=>{
     let val = num.value;
@@ -14,6 +16,7 @@ const consulta2 = ()=>{
     }
     
 };
+// && ||
 const consulta3 = ()=>{
     let val = num.value;
     if (val<=20) {
@@ -21,6 +24,6 @@ const consulta3 = ()=>{
     }else{
         res.innerText="El número es mayor a 20";
     }
-    // res.innerText = (val<=20) ? "El número es menor o igual a 20" : "El número es mayor a 20";
+    res.innerText = ((val<=20)&&(true)) ? "El número es menor o igual a 20" : "El número es mayor a 20";
     
 };

@@ -1,19 +1,20 @@
-const superHeroes = ["Superman","Iron Man","Batman","Capitan América","Flash"]
+let resultado=document.getElementById("resultado");
+// let res=base;
 
-let posicion = 0;
-while (posicion!==superHeroes.length) {
+// let aux=1;
+// while (potencia !== aux) {
+//     res = res*base;
+//     aux++;
+// }
+// console.log(res);
+const calcularPotencia= ()=>{
+    let base= document.getElementById("base").value;
+    let potencia=document.getElementById("exponente").value;
 
-    console.log(superHeroes[posicion]);
-    posicion++;
-
+    let res=base; //3
+    for (let i = 1; i < potencia; i++) {
+        res = res*base
+    }
+    // console.log(res);
+    resultado.innerText= res;
 }
-
-for (let i = 0; i < superHeroes.length; i++) {
-    console.log(superHeroes[i]);
-    
-}
-
-superHeroes.forEach(superHeroe => {
-    console.log(superHeroe);
-    
-});

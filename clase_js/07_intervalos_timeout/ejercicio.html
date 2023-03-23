@@ -14,13 +14,25 @@
             0 sec
         </div>
         <div>
-            <input type="text" id="segundos" placeholder="tiempo en segundos">
-            <button>Comenzar</button>
+            <input type="number" id="segundos" placeholder="tiempo en segundos">
+            <button onclick="temporizar();">Comenzar</button>
         </div>
     </div>
 
     <script>
-        // Crear un cronómetro de segundos que permita ingresar x cantidad de segundos. al finalizar, avisarlo mediante un alert
+        // Crear un temporizador de segundos que permita ingresar x cantidad de segundos. al finalizar la ejecución, avisarlo mediante un alert
+        const temporizar = ()=>{
+            let tiempoUsuario = document.getElementById("segundos").value;
+            const pantalla = document.getElementById("tiempo");
+            const intervalo = setInterval(() => {
+                if (tiempoUsuario==0) {
+                    alert("Fin intervalo.")
+                    clearInterval(intervalo);
+                }
+                pantalla.innerText= tiempoUsuario + " segundos";
+                tiempoUsuario--;
+            }, 1000);
+        }
     </script>
 </body>
 </html>
