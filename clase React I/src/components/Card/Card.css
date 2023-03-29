@@ -1,0 +1,38 @@
+.card {
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    box-shadow: 8px 4px 20px #1E1D1D;
+}
+
+.color-1 {
+    background-color: red;
+}
+.color-2 {
+    background-color: blue;
+}   
+.color-3 {
+    background-color: green;
+}   
+.color-4 {
+    background-color: yellow;
+} 
+.color-5 {
+    background-color: orange;
+}     
+.color-6 {
+    background-color: skyblue;
+}   
+.color-7 {
+    background-color: black;
+}   
+.color-8 {
+    background-color: violet;
+}   
+.color-9 {
+    background-color: pink;
+}  
+.color-10 {
+    background-color: fuchsia;
+}   
