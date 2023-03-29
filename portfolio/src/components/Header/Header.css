@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos con un ancho menor o igual a 768px */
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+    padding: 10px;
+    }
+
+    .logo {
+    margin-bottom: 10px;
+    font-size: 28px;
+    }
+
+    nav {
+    margin-top: 10px;
+    }
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav li {
+    margin: 10px 0;
+    }
+
+    nav li:last-child {
+    margin-bottom: 0;
+    }
+}

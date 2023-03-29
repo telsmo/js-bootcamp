@@ -1,0 +1,10 @@
+.not_found_container{
+    margin: auto;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .not_found_container {
+    font-size: 20px;
+    }
+}
